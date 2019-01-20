@@ -17,6 +17,11 @@ margin: 0;
     font-weight: 700;
 }
 
+.smallwhitebutton {
+    background-color: #FFFFFF;
+    color: #26547C;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -30,4 +35,8 @@ main {
 .footerpink {
     background-color: #EF476F;
 
+}
+
+.gifButtons {
+    overflow: scroll;
 }
