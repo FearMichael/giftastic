@@ -9,7 +9,7 @@ var gifZone = $("#gifZone");
 gifSearchButton.click(function(event) {
     queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifSearch + "&api_key=UQlAY3AHnV7hwkRT2LuYZ3yzeoCA9smT";
     $.ajax({
-        URL: queryURL,
+        url: queryURL,
         method: "GET",
     }).then(function(info) {
         console.log(info);
