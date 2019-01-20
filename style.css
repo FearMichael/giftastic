@@ -20,6 +20,7 @@ margin: 0;
 .smallwhitebutton {
     background-color: #FFFFFF;
     color: #26547C;
+    margin: 10px;
 }
 
 body {

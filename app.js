@@ -5,6 +5,14 @@ var gifZone = $("#gifZone");
 var gifButtons = $(".gifButtons");
 var topics = ["dogs","cats","laughing"]
 
+$("input").on("keypress", function(event) {
+    console.log("Prevented!");
+    // var gifSearch = $("#gifSearch").val();
+    // topics.push(gifSearch)
+    // event.preventDefault();
+    
+})
+
 function getGifs() {
     $.ajax({
         url: queryURL,
@@ -18,15 +26,12 @@ function getGifs() {
             gifImg.attr("still", info.data[i].images.fixed_width_still.url);
             gifImg.attr("move", info.data[i].images.fixed_width.url);
             gifImg.click(function() {
-                var still = gifImg.attr("still");
-                var move = gifImg.attr("move");
-                if (gifImg.attr("src") == still) {
-                    gifImg.attr("src", move);
-                    console.log("still")
+                var still = $(this).attr("still");
+                var move = $(this).attr("move");
+                if ($(this).attr("src") == still) {
+                    $(this).attr("src", move);
                 } else {
-                    console.log("Move")
-                    gifImg.attr("src", still);
-                    
+                    $(this).attr("src", still);
                 };
             });
             gifZone.append(imgDiv);
@@ -36,6 +41,7 @@ function getGifs() {
 };
 
 function makeButtons() {
+    gifButtons.empty();
     topics.forEach(function(elem) {
         var buttons =  $("<button>").addClass("btn btn-small smallwhitebutton").text(elem);
          buttons.attr("data", elem.trim());
@@ -53,8 +59,8 @@ function makeButtons() {
 gifSearchButton.click(function(event) {
     var gifSearch = $("#gifSearch").val();
     topics.push(gifSearch)
+    // $("#gifSearch").clear(); 
 //create button in gifButtons
 makeButtons();
 });
-
 makeButtons();
