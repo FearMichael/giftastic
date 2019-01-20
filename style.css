@@ -1,0 +1,33 @@
+.pinkbackground {
+    background-color: #EF476F;
+    height: 30vh;
+    margin: 0;
+}
+
+.darkbluebackground {
+background-color: #26547C;
+height: 70vh;
+overflow: scroll;
+margin: 0;
+}
+
+.whitebutton {
+    background-color: #FFFFFF;
+    color:  #26547C;
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+  
+.footerpink {
+    background-color: #EF476F;
+
+}
