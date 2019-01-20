@@ -12,8 +12,9 @@ gifSearchButton.click(function(event) {
         URL: queryURL,
         method: "GET",
     }).then(function(info) {
+        console.log(info);
         for (i=0; i<=10; i++) {
-            gifZone.append("<div>").addClass("col l2 offset-l1 s6").append("<img src='" + info.data.data[i].images.fixed_width.url + "'")
+            gifZone.append("<div>").addClass("col l2 offset-l1 s6").append("<img src='" + info.data[i].images.fixed_width.url + "'")
             // gifZone.append(info.data[i].images.fixed_width.url);
             // gifZone.append()
             
