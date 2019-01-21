@@ -1,20 +1,22 @@
 .pinkbackground {
     background-color: #EF476F;
-    height: 30vh;
+    /* height: 30vh; */
     margin: 0;
 }
 
 .darkbluebackground {
 background-color: #26547C;
-height: 70vh;
-overflow: scroll;
+min-height: 70vh;
+/* overflow: scroll; */
 margin: 0;
+padding-top: 2em;
 }
 
 .whitebutton {
     background-color: #FFFFFF;
     color:  #26547C;
     font-weight: 700;
+    margin: 1em;
 }
 
 .smallwhitebutton {
@@ -40,4 +42,12 @@ main {
 
 .gifButtons {
     overflow: scroll;
+}
+#gifSearch {
+    border-bottom: 1px solid #26547C;
+}
+
+#gifSearch :active {
+    border-bottom: 1px solid #26547C;
+
 }
