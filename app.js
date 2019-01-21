@@ -11,7 +11,6 @@ function getGifs() {
         url: queryURL,
         method: "GET",
     }).then(function(info) {
-        console.log(info);
         for (i=0; i<10; i++) {
             var imgDiv = $("<div>").addClass("col l3 s6");
             var gifImg = $("<img>").addClass("responsive-img");
