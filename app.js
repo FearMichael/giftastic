@@ -54,6 +54,7 @@ gifSearchButton.click(function(event) {
     // $("#gifSearch").clear(); 
     //create button in gifButtons
     makeButtons();
+    getGifs();
 });
 makeButtons();
 
