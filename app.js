@@ -54,7 +54,6 @@ function makeButtons() {
             });
         gifButtons.append(buttons);
     });
-
 };
 
 gifSearchButton.click(function(event) {
