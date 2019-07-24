@@ -56,3 +56,7 @@ main {
     text-align: center;
     max-width: inherit;
 }
+
+#gifZone {
+    display: none;
+}
